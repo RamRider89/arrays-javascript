@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<link rel="stylesheet" href="assets/css/main.css">
+
+<meta charset="UTF-8">
+<meta name=description content="Curso basico de Javascript">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="description" content="Conoce los conceptos clave de JavaScript del lenguaje de programación.">
+<meta property="og:description" content="Conoce los conceptos clave de JavaScript del lenguaje de programación." />
+<meta property="og:title" content="Curso Básico de JavaScript" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://platzi.com/cursos/basico-javascript/" />
+<meta property="og:image" content="https://static.platzi.com/media/courses/OG-Basicojs.png" />
+<meta property="og:site_name" content="http://platzi.com/cursos/basico-javascript/" />
+
+<link rel="icon" type="image/x-icon" href="./assets/img/badge.avif">
+
+<title>Arreglos Platzi</title>
+
+</head>
+
+
+
+<body>
+
+<div id="app">
+    <div id="titulo">Arreglos JS</div>
+
+    <div id="displayFrutas" class="contenido">
+        <!-- arreglo de frutas para mostrar en pantalla-->
+    </div>
+
+    <div class="contenido">
+        <button id="btnAddInicio" class="boton botonAdd">Añadir al Inicio</button>
+        <button id="btnAddFinal" class="boton botonAdd">Añadir al Final</button>
+
+        <button id="btnDelInicio" class="boton botonDel">Eliminar al Inicio</button>
+        <button id="btnDelFinal" class="boton botonDel">Eliminar al Final</button>
+
+        <button id="reset" class="boton botonReset">Reset</button>
+    </div>
+
+    <div class="contenido">
+        <input type="search" class="search-field" placeholder="Search…" name="filterFrutas" id="filterFrutas" tabindex="-1">
+        <select id="filterPrecios" class="search-field">
+            <option value="10000">Seleccione una opcion</option>
+            <option value="50">Menos de $50</option>
+            <option value="100">Menos de $100</option>
+            <option value="1000">Más de $100</option>
+        </select>
+    </div>
+
+    <div class="contenido">
+        <div class="listaPrecios">
+            <span>Lista de articulos <b id="cantidadFrutas"></b></span>
+            <div class="lista">
+                <ul id="listaFrutas"></ul>
+                <ul id="listaPrecios"></ul>
+            </div>
+            <div id="precioTotal">45455</div>
+
+        </div>
+
+        <div class="acciones">
+            <span>Acciones</span>
+                <ul>
+                    <li>Articulos en oferta: <button id="checkOfertas" class="boton butonAccion">Comprobar</button></li>
+                </ul>
+            
+        </div>
+    </div>
+
+
+    <div class="contenido consolaarea">
+        <h4>Consola</h4>
+        <textarea id="consola" readonly></textarea>
+    </div>
+
+    <div class="contenido">
+        <ul>Practica Platzi para el Curso Basico de Javascript
+            <li>url: <a href="https://platzi.com/cursos/basico-javascript/">platzi.com/cursos/basico-javascript/</a></li>
+            <li>Temario:</li>
+            <li>Arreglos y metodos</li>
+            <li><code>filter, map, find, forEach, some, every, reduce</code></li>
+            <li><code>length, push, pop, unshift, shift, indexOf</code></li>
+            <li>Más info: <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/">developer.mozilla.orgJavaScript/Reference/Array/</a></li>
+        </ul>
+
+    </div>
+
+    <div class="contenido">
+        <img src="./assets/img/badge.avif" alt="" height="42px">
+    </div>
+
+
+
+</div>
+
+
+<!-- Modal content -->
+<div id="modalGame" class="modal-content">
+    <div class="modal-header">
+        <span class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+        <span id="resultAviso"></span>
+        <p></p>
+    </div>
+</div>
+
+<div class="modalShadow"></div>
+
+
+</body>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/fruits.js"></script>
+<!-- <script src="assets/js/metodos.js"></script> -->
+
+</html>
